@@ -12,6 +12,7 @@ function closePopUps()
 	$(".b-event-clickable").addClass("b-event-hide");
 	$(".event-form .b-page-textbox").removeClass("b-event-hide").attr("value","");
 	$("#event-description").val("");
+	$("#quick-event-text").attr("value","");
 }
 
 /**
@@ -26,7 +27,7 @@ function parseDate(date)
 	{
 		if (+date[i])
 		{
-			if (day && date[i] >= 1 && date[i] <= 31)
+			if (day && date[i] >=1 && date[i] <= 12)
 			{
 				month = date[i] -1;
 			} else
@@ -96,6 +97,10 @@ function createQuickEvent()
 			if (+items[i])
 			{
 				//день
+				if (day && items[i] >= 1 && items[i] <= 12 )
+				{
+					month = items[i] - 1;
+				}   else
 				if (items[i] >= 1 && items[i] <= 31)
 				{
 					day = items[i];
