@@ -1,0 +1,188 @@
+/*
+Стили для календаря.
+*/
+.ui-calendar-font-white-color
+{
+color:#eee;
+}
+
+.ui-calendar-font {
+
+
+}
+
+.ui-calendar-margin {
+    margin:1px;
+}
+
+
+.ui-calendar-events
+{
+   background-color: #c2e4fe;
+
+}
+
+
+.ui-calendar-event__text
+{
+    color:#8997a2;
+}
+.ui-calendar-event__title
+{
+    font-weight: bold;
+}
+
+.ui-calendar-month-control
+{
+    color:#777;
+}
+
+.ui-calendar-div {
+    color: #222;
+
+
+}
+
+.ui-calendar-head {
+
+    padding: 3px;
+
+}
+
+
+
+.ui-calendar-list {
+    list-style:none;
+    position:relative;
+    left:-40px;
+    top:-10px;
+    width:1000px;
+    color: #222;
+}
+
+.ui-calendar-clear {
+    clear:both;
+}
+
+
+.ui-calendar-selectable {
+}
+
+    .ui-calendar-selectable:hover {
+        opacity:0.7;
+        border: 1px solid #86c9fd;
+    }
+
+
+.ui-calendar-list-up {
+    top:-15px;
+}
+
+.ui-calendar-list-item-width
+{
+    width:20px;
+}
+
+.ui-calendar-today__button
+{
+    font-size:12px;
+    text-align: center;
+    width: 57px;
+    height: 17px;
+    background: transparent url("images/sp-bg.png") no-repeat scroll 0 0;
+    background-position: -23px 0px;
+    margin:0 10px;
+}
+
+.ui-calendar-list-item {
+    display:block;
+    color:#999;
+    font-size:12px;
+    border: 1px solid #ebebeb;
+    width: 107px;
+    height: 97px;
+    padding:10px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.ui-calendar-daterange-clickable:hover
+{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.ui-calendar-text-left-side
+{
+	text-align:right;
+}
+
+.ui-calendar-cursor:hover
+{
+ cursor:pointer;
+}
+
+.ui-calendar-padding
+{
+    padding-top:15px;
+}
+
+.ui-calendar-move
+{
+    width: 17px;
+    height: 17px;
+}
+
+.ui-calendar-move__left
+{
+    background: transparent url("images/sp-bg.png") no-repeat scroll 0 0;
+    background-position: -0px 0px;
+}
+
+.ui-calendar-move__right
+{
+    background: transparent url("images/sp-bg.png") no-repeat scroll 0 0;
+    background-position: -0px -21px;
+}
+
+.ui-calendar-move:hover {
+       
+    color:#111;
+    background-color:#fff;
+    opacity:0.7;
+
+}
+
+.ui-calendar-daterange {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.left-side {
+    float:left;
+}
+
+.right-side {
+    float:right;
+}
+
+
+.ui-calendar-today
+{
+    font-weight: bold;
+    background-color: #efefef;
+}
+
+.ui-calendar-select
+{
+    border: 1px solid #86c9fd;
+    background-color: #c2e4fe;
+}
+
+.ui-calendar-search
+{
+
+    opacity:0.7;
+    border: 1px solid #86c9fd;
+
+}

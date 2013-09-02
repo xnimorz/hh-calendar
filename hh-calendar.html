@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" 
+	  http-equiv="Content-Type"/>
+  <title>HH Calendar</title>
+	<link rel="stylesheet" type="text/css" href="UICalendar.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="http://yandex.st/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="UICalendar.js"></script>
+    <script type="text/javascript" src="hh-calendar.js"></script>
+</head>
+<body class=b-page>
+                 <div class="b-header b-box-shadow">
+                    <div class="b-header-bar">
+                        <div class="b-header-bar-buttons">
+                            <div id="new-event" class="b-header-bar-buttons__button b-border-radius b-box-shadow-2px">
+                                Добавить
+                            </div>
+                            <div id="update" class="b-header-bar-buttons__button b-border-radius button-margin-left b-box-shadow-2px">
+                                Обновить
+                            </div>
+                        </div>
+
+                        <div class="b-header-bar-nav">
+                            <div class="b-header-bar-nav__item b-header-bar-nav__search-img">
+
+                            </div>
+                            <input tabindex="-1" id="b-search" class="b-page-textbox b-header-bar-nav__item b-header-bar-nav__text b-border-radius" type="text" placeholder="Событие, дата или участник">
+                        </div>
+                    </div>
+
+                 </div>
+                <div class="b-page-calendar">
+
+                </div>
+
+                 <div class="b-quick-event b-pop-up hide b-box-full-shadow">
+                    <div class="b-quick-event__arrow-up"></div>
+                    <div class="b-close"></div>
+                    <div class="new-line"></div>
+                    <input id="quick-event-text" type="text" class="b-page-textbox b-border-radius b-quick-event__text" placeholder="5 марта, 14:00, День рождение"/>
+                    <div id="create-quick-event" class="b-long-button b-quick-event__button-margin">Создать</div>
+
+                </div>
+
+                 <div class="b-event b-pop-up hide b-box-full-shadow">
+                     <div class="b-event__arrow"></div>
+                     <div class="b-close b-event-close"></div>
+                     <div class="new-line"></div>
+                     <div  class="event-form">
+                         <div id="i-event-info" class="b-event__text-info b-event__title b-event-clickable b-event-hide b-event-margin__left b-event__text-holder"></div>
+                         <input id=event-info type="text" class="b-page-textbox b-border-radius b-event__text b-event__title-box" placeholder="Событие"/>
+
+                         <div id=i-event-date-info class="b-event__text-info b-event-clickable b-event-hide b-event-margin__left b-event-margin__top b-event__text-holder"></div>
+                         <input id=event-date-info title="Оставьте пустым и дата будет выбрана автоматически"
+                                type="text" class="b-page-textbox b-border-radius b-event__text"
+                                placeholder="День, месяц, год"/>
+
+                         <div id=i-event-part-info class="b-event__text-info b-event-clickable b-event-hide b-event-margin__left b-event-margin__top">
+                            <div class="b-event__hint">Участники:</div>
+                            <div class="b-event__text-holder"></div>
+                         </div>
+                         <input id=event-part-info type="text" class="b-page-textbox b-border-radius b-event__text" placeholder="Имена участников"/>
+
+                         <textarea id=event-description class="b-page-textarea b-border-radius" placeholder="Описание"></textarea>
+                         <div class="event-buttons">
+                            <div id="create-event" class="b-button left-side">Готово</div>
+                            <div id="delete-event" class="b-long-button left-side left-margin">Удалить</div>
+                         </div>
+                     </div>
+                 </div>
+
+                <div class="b-search-box b-pop-up b-box-full-shadow hide">
+                    <div class="b-quick-event__arrow-up"></div>
+                    <div class="b-search-form">
+
+                    </div>
+                </div>
+</body>
+</html>
