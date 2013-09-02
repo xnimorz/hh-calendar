@@ -26,8 +26,13 @@ function parseDate(date)
 	{
 		if (+date[i])
 		{
+			if (day && date[i] >= 1 && date[i] <= 31)
+			{
+				month = date[i] -1;
+			} else
 			if (date[i] >= 1 && date[i] <= 31)
 				day = date[i];
+
 			if (date[i] >= 1500 && date[i] <= 3000)
 				year = date[i];
 		}
@@ -81,7 +86,7 @@ function createQuickEvent()
 {
 	var day, month, year, time, event;
 	var text = $("#quick-event-text").attr("value");
-	var items = text.split(/[\s,]/);
+	var items = text.split(/[\s,\.]/);
 
 	//Обрабатываем полученную строку
 	for (var i = 0 ; i < items.length; i++)
@@ -290,7 +295,7 @@ function init()
 		   descr = $("#event-description").val();
 
 
-		date = date.split((/[\s,]/));
+		date = date.split((/[\s,\.]/));
 		var parsedDate = parseDate(date);
 		date = new Date
 		(
